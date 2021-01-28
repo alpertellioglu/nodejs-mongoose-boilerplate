@@ -6,7 +6,6 @@ const placesRoutes = require("./routes/places-routes");
 const usersRoutes = require("./routes/users-routes");
 const HttpError = require("./models/http-error");
 
-//mongo password: 0FHHtj0olWmjswmQ
 
 const app = express();
 
@@ -31,7 +30,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb+srv://alper:0FHHtj0olWmjswmQ@cluster0.upuok.mongodb.net/places?retryWrites=true&w=majority",
+    "you-should-write-here-the-mongodb-server-url",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
